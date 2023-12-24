@@ -108,17 +108,18 @@ main #upcomingShows #cardContainer .card {
   background-color: black;
   margin-bottom: 1em;
   text-align: center;
-  box-shadow: 3px 3px 8px white;
+  box-shadow: 3px 3px 8px rgb(0, 255, 255);
   border-radius: 10px;
 }
 main #upcomingShows #cardContainer .card .textBox {
   margin: 0;
   color: white;
   text-decoration: none;
-  font-size: 1.25em;
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
 }
 main #upcomingShows #cardContainer .card .textBox a {
   text-decoration: none;
@@ -133,6 +134,8 @@ main #upcomingShows #cardContainer .card .textBox h6 {
   margin-inline-end: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 main #upcomingShows #cardContainer .card .textBox .textBoxText {
   margin-top: 1em;
@@ -148,10 +151,10 @@ main #upcomingShows #cardContainer .card img {
 }
 @media screen and (max-width: 785px) {
   main #upcomingShows #cardContainer .card {
-    width: 90%;
+    width: 80%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1069px) {
   main #upcomingShows #cardContainer .card {
     width: 30%;
   }
