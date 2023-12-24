@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 10vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+nav #heathRichardsonLogo {
+  height: 100%;
+  width: auto;
+}
+nav #links a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: white;
+  font-size: 1em;
+  text-shadow: 2px 2px 3px black;
+  font-family: "Open Sans", sans-serif;
+}
+
+main #landingBackground {
+  background-image: url("/img/spotlight.jpg");
+  background-position: left 80%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-bottom: 1px solid white;
+}
+main #landingBackground img {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+main #landingBackground h1 {
+  position: absolute;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 4%;
+  margin-left: 55%;
+  color: rgb(115, 255, 0);
+  text-shadow: 0px 1px 2px black;
+  font-family: "Kristi", cursive;
+  font-weight: 600;
+  font-size: 5.25vw;
+  transform: rotate(-15deg);
+  z-index: 2;
+}
+main #landingBackground h2 {
+  position: absolute;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 7.5%;
+  margin-left: 59.1%;
+  color: rgb(0, 255, 255);
+  text-shadow: 0px 1px 2px black;
+  font-weight: 600;
+  font-size: 3.25vw;
+  transform: rotate(-15deg);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.3em;
+  z-index: 1;
+}
+main #landingBackground #name {
+  transform: rotate(45);
+}
+main #upcomingShows {
+  background-image: url("/img/backgrounds/space-background.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 50%;
+  border-bottom: 3px solid black;
+}
+main #upcomingShows h1 {
+  margin: 0;
+  padding: 1em;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Open Sans", sans-serif;
+}
+main #upcomingShows #cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+main #upcomingShows #cardContainer .card {
+  height: 450px;
+  width: 40%;
+  background-color: black;
+  margin-bottom: 1em;
+  text-align: center;
+  box-shadow: 3px 3px 8px white;
+  border-radius: 10px;
+}
+main #upcomingShows #cardContainer .card .textBox {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main #upcomingShows #cardContainer .card .textBox a {
+  text-decoration: none;
+  width: fit-content;
+  background-color: white;
+  align-self: center;
+  border-radius: 3px;
+  padding: 3px;
+}
+main #upcomingShows #cardContainer .card .textBox h6 {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+main #upcomingShows #cardContainer .card .textBox .textBoxText {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+main #upcomingShows #cardContainer .card img {
+  border: none;
+  width: 100.1%;
+  height: 300px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-bottom: 3px;
+}
+@media screen and (max-width: 785px) {
+  main #upcomingShows #cardContainer .card {
+    width: 90%;
+  }
+}
+@media (min-width: 1000px) {
+  main #upcomingShows #cardContainer .card {
+    width: 30%;
+  }
+}
+main #about {
+  background-color: white;
+  background-image: url("/img/backgrounds/hipster-background.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main #about h1 {
+  margin: 0;
+  padding: 1em;
+  width: 90%;
+  text-align: center;
+  color: rgb(0, 118, 192);
+  text-shadow: 4px 4px 4px yellow;
+  font-family: sans-serif;
+}
+main #about p {
+  color: black;
+  text-shadow: 3px 3px 3px gray;
+  height: 100%;
+}
+main #about #aboutContainer {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+main #about #aboutContainer li {
+  width: 90%;
+}
+main #about #aboutContainer img {
+  visibility: hidden;
+  max-width: 100%;
+}
+main #about #aboutContainer #image1 {
+  background-image: url("/img/me/1.jpg");
+  background-position: center 75%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  max-height: 300px;
+}
+main #about #aboutContainer #image2 {
+  background-image: url("/img/me/2.jpg");
+  background-position: center 25%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  max-height: 300px;
+}
+main #about #aboutContainer #image3 {
+  margin-top: 0.5em;
+  background-image: url("/img/me/3.jpg");
+  background-position: center 60%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  max-height: 300px;
+}
+main #about #aboutContainer #image4 {
+  background-image: url("/img/me/4.jpg");
+  background-position: center 25%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  max-height: 300px;
+}
+@media screen and (min-width: 600px) {
+  main #about #aboutContainer {
+    flex-direction: row;
+  }
+  main #about #aboutContainer li {
+    width: 50%;
+  }
+  main #about #aboutContainer #image1 {
+    order: 2;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p1 {
+    order: 1;
+  }
+  main #about #aboutContainer #image2 {
+    order: 3;
+    max-height: 275px;
+  }
+  main #about #aboutContainer #p2 {
+    order: 4;
+    text-align: right;
+  }
+  main #about #aboutContainer #image3 {
+    order: 6;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p3 {
+    order: 5;
+  }
+  main #about #aboutContainer #image4 {
+    order: 7;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p4 {
+    order: 8;
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  main #about #aboutContainer {
+    flex-direction: row;
+  }
+  main #about #aboutContainer li {
+    width: 25%;
+  }
+  main #about #aboutContainer li p {
+    text-align: center;
+    padding: 1em;
+  }
+  main #about #aboutContainer #image1 {
+    order: 1;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p1 {
+    order: 5;
+  }
+  main #about #aboutContainer #image2 {
+    order: 2;
+    max-height: 275px;
+  }
+  main #about #aboutContainer #p2 {
+    order: 6;
+    text-align: right;
+  }
+  main #about #aboutContainer #image3 {
+    order: 3;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p3 {
+    order: 7;
+  }
+  main #about #aboutContainer #image4 {
+    order: 4;
+    max-height: 225px;
+  }
+  main #about #aboutContainer #p4 {
+    order: 8;
+    text-align: right;
+  }
+}
+main #about #aboutText {
+  width: 90%;
+}
+main #hobbies {
+  background-image: url("/img/backgrounds/80s-background.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 40%;
+  height: 50vh;
+}
