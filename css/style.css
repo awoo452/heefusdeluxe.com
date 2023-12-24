@@ -73,6 +73,12 @@ main #landingBackground h2 {
   letter-spacing: 0.3em;
   z-index: 1;
 }
+@media (max-width: 600px) {
+  main #landingBackground h2 {
+    margin-top: 8.5%;
+    margin-left: 59.1%;
+  }
+}
 main #landingBackground #name {
   transform: rotate(45);
 }
