@@ -33,7 +33,16 @@ nav {
     }
 }
 
-main {   
+main {  
+    p {
+        position: absolute;
+        width: 50%;
+        background-color: yellow;
+        opacity: 80%;
+        margin-top: 25vh;
+        color: red;
+        font-size: .75em;
+    }
     #landingBackground {
         background-image: url('/img/spotlight.jpg');
         background-position: left 80%;
@@ -91,6 +100,7 @@ main {
         background-repeat: repeat;
         background-size: 50%;
         border-bottom: 3px solid black;
+        
         h1 {
             margin: 0;
             padding: 1em;

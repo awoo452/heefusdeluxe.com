@@ -31,6 +31,15 @@ nav #links a {
   font-family: "Open Sans", sans-serif;
 }
 
+main p {
+  position: absolute;
+  width: 50%;
+  background-color: yellow;
+  opacity: 80%;
+  margin-top: 25vh;
+  color: red;
+  font-size: 0.75em;
+}
 main #landingBackground {
   background-image: url("/img/spotlight.jpg");
   background-position: left 80%;
