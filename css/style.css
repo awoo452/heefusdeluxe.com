@@ -103,7 +103,7 @@ main #upcomingShows #cardContainer {
   flex-wrap: wrap;
 }
 main #upcomingShows #cardContainer .card {
-  height: 450px;
+  height: fit-content;
   width: 40%;
   background-color: black;
   margin-bottom: 1em;
@@ -120,6 +120,7 @@ main #upcomingShows #cardContainer .card .textBox {
   flex-direction: column;
   font-size: 1.1em;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 1em;
 }
 main #upcomingShows #cardContainer .card .textBox a {
   text-decoration: none;
@@ -128,14 +129,15 @@ main #upcomingShows #cardContainer .card .textBox a {
   align-self: center;
   border-radius: 3px;
   padding: 3px;
+  margin: 0.1em;
 }
 main #upcomingShows #cardContainer .card .textBox h6 {
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 main #upcomingShows #cardContainer .card .textBox .textBoxText {
   margin-top: 1em;
@@ -143,15 +145,15 @@ main #upcomingShows #cardContainer .card .textBox .textBoxText {
 }
 main #upcomingShows #cardContainer .card img {
   border: none;
-  width: 100.1%;
-  height: 300px;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   margin-bottom: 3px;
 }
 @media screen and (max-width: 785px) {
   main #upcomingShows #cardContainer .card {
-    width: 80%;
+    width: 60%;
   }
 }
 @media (min-width: 1069px) {
@@ -168,6 +170,7 @@ main #about {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  display: none;
 }
 main #about h1 {
   margin: 0;
